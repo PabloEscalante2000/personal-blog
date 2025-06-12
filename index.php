@@ -28,4 +28,5 @@
 
     ?>
 </body>
+<script src="./app/js/ajax.js"></script>
 </html>
