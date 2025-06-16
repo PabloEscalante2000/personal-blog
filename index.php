@@ -21,7 +21,7 @@
     if($vista === "home" || $vista === "article"){
         require_once(__DIR__."/app/views/".$vista."-view.php");
     } else if($vista === "admin" || $vista === "edit" || $vista === "new") {
-        require_once(__DIR__."/app/views/admin/".$vista."-view.php");
+        require_once(__DIR__."/app/security/security.php");
     } else {
         require_once(__DIR__."/app/views/404-view.php");
     }

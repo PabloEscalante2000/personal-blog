@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Área de Administración - Acceso Restringido"
-AuthUserFile "C:\xampp\secure\.htpasswd"
-Require valid-user
