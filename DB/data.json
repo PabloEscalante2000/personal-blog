@@ -1,5 +1,14 @@
 {
-    "blogs":[
-        
+    "blogs": [
+        {
+            "id": "68519e4ad4daa",
+            "title": "\u00bfPor qu\u00e9 algunos zorros son de color naranja?",
+            "date": "2025-06-20"
+        },
+        {
+            "id": "6851b26b9b35f",
+            "title": "\u00bfPor qu\u00e9 est\u00e1 bajando la tasa de natalidad en el mundo?",
+            "date": "2025-06-28"
+        }
     ]
 }

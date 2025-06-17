@@ -8,6 +8,6 @@
         </a>
     </div>
 </div>
-<div class="p-5 w-full max-w-[1000px] mx-auto">
+<div class="p-5 w-full max-w-[1000px] mx-auto" id="admin-list">
     <?php require_once(__DIR__."/../../logic/read-admin-logic.php") ?>
 </div>
