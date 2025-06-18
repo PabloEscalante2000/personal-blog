@@ -1,7 +1,16 @@
 const createForm = document.getElementById("create-form")
+const updateForm = document.getElementById("update-form")
 
 if(createForm){
     createForm.addEventListener("submit",function(e){
+        e.preventDefault()
+        ajax(this)
+        this.reset()
+    })
+}
+
+if(updateForm){
+    updateForm.addEventListener("submit",function(e){
         e.preventDefault()
         ajax(this)
         this.reset()
