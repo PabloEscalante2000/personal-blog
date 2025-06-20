@@ -1,4 +1,7 @@
 <?php
+    $local = strpos($_SERVER['HTTP_HOST'],'localhost') !== false;
+    define("BASE_URL", $local ? "/personal-blog/" : "/");
+    
     if(isset($_GET['views'])){
         $url=explode("/", $_GET['views']);
     }else{
@@ -28,5 +31,5 @@
 
     ?>
 </body>
-<script src="./app/js/ajax.js"></script>
+<script src="<?= BASE_URL ?>app/js/ajax.js"></script>
 </html>

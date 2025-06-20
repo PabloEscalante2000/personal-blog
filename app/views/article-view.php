@@ -22,7 +22,5 @@
 <div class="max-w-[1000px] w-full p-5 mx-auto space-y-5">
     <h1 class="font-bold text-2xl"><?= $data["title"] ?></h1>
     <p class="text-lg opacity-90"><?= $data["date"] ?></p>
-    <p class="text-xl">
-        <?= $data["content"] ?>
-    </p>
+    <p class="text-xl whitespace-pre-line break-all"><?= $data["content"] ?></p>
 </div>

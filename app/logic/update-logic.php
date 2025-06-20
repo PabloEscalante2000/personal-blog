@@ -17,42 +17,44 @@
                 "content" => $content
             ];
 
-            // Actulizar lista de blogs
+            // ? Obtener datos de data.json
 
             $json = file_get_contents(__DIR__."/../../DB/data.json");
-
             $data = json_decode($json,true);
             $blogs = $data["blogs"];
-            $blogs[] = [
-                "id" => $id,
-                "title" => $title,
-                "date" => $date,
-            ];
 
-            $res = ["blogs" => $blogs];
-
-            file_put_contents(__DIR__."/../../DB/data.json",json_encode($res,JSON_PRETTY_PRINT));
-
-            
-            // Crear nuevo archivo
-            
-            $json = json_encode($datos, JSON_PRETTY_PRINT);
-
+            // * Ruta del blog 
             $ruta = __DIR__."/../../DB/blogs/".$id."-blog.json";
 
-            if(file_put_contents($ruta,$json)){
+            if(file_exists($ruta)){
+                // * Actualizar archivo data.json
+                foreach($blogs as &$blog){
+                    if($blog["id"] === $id){
+                        $blog["title"] = $title;
+                        $blog["date"] = $date;
+                        $blog["content"] = $content;
+                    }
+                }
+
+                // * Respuesta a actualizar en data.json
+                $res = ["blogs" => $blogs];
+
+                file_put_contents(__DIR__."/../../DB/data.json",json_encode($res,JSON_PRETTY_PRINT));
+
+                // * Actualizar archivo del blog
+                file_put_contents($ruta,json_encode($datos,JSON_PRETTY_PRINT));
+
                 $alert = [
                     "solution" => true,
-                    "type" => "create"
+                    "type" => "update"
                 ];
+
             } else {
                 $alert = [
                     "solution" => false,
-                    "text" => "¡No se pudo crear el archivo!"
+                    "text" => "¡No se encontró el archivo!"
                 ];
             }
-
-
 
         } else {
             $alert = [

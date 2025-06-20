@@ -44,6 +44,7 @@ function ajax(form){
                 // rewriteList()
             } else if(res.type === "update"){
                 // rewriteList()
+                window.location.href = "../admin"
             }
         } else {
             alert("¡Hubo un error!")

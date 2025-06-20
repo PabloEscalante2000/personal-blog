@@ -2,18 +2,14 @@
     "blogs": [
         {
             "id": "68519e4ad4daa",
-            "title": "\u00bfPor qu\u00e9 algunos zorros son de color naranja?",
-            "date": "2025-06-20"
+            "title": "Zorros naranja",
+            "date": "2025-06-30",
+            "content": "El pelaje naranja del zorro rojo (Vulpes vulpes) es una adaptaci\u00f3n evolutiva que le permite camuflarse en entornos con vegetaci\u00f3n oto\u00f1al y suelos rojizos. Su tonalidad se debe a melaninas y la reflexi\u00f3n de la luz, variando seg\u00fan la zona: m\u00e1s rojizo en bosques y m\u00e1s p\u00e1lido en desiertos o regiones fr\u00edas. Esta coloraci\u00f3n optimiza su supervivencia, ayud\u00e1ndole tanto a cazar como a evitar depredadores."
         },
         {
             "id": "6851b26b9b35f",
             "title": "\u00bfPor qu\u00e9 est\u00e1 bajando la tasa de natalidad en el mundo?",
             "date": "2025-06-28"
-        },
-        {
-            "id": "6851d99c1ed8c",
-            "title": "prueba1",
-            "date": "2025-06-04"
         }
     ]
 }

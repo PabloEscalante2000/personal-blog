@@ -38,7 +38,7 @@
 </div>
 <div class="p-5 w-full max-w-[1000px] mx-auto space-y-5">
     <h1 class="text-3xl text-blue-500 font-bold">Update Article</h1>
-    <form id="update-form" class="space-y-5" action="./app/logic/update-logic.php" method="post">
+    <form id="update-form" class="space-y-5" action="<?= BASE_URL ?>app/logic/update-logic.php" method="post">
         <input name="article_id" type="hidden" value="<?= $current_blog["id"] ?>"/>
         <input required type="text" placeholder="Article Title" name="article_title" class="w-full p-5 rounded-lg border-4 border-blue-400 text-xl outline-transparent" value="<?= $current_blog["title"] ?>"/>
         <input required type="date" placeholder="Publishing Date" name="article_date" class="w-full p-5 rounded-lg border-4 border-blue-400 text-xl outline-transparent" value="<?= $current_blog["date"] ?>" />
